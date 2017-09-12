@@ -24,7 +24,7 @@ SECRET_KEY = 'l$+ndk2$ye0i9g&wsb1_tna=3rthj*t=3b#ppxd)=s$@cg!js%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 # Application definition
 

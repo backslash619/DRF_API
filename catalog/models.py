@@ -1,6 +1,8 @@
 from __future__ import unicode_literals
-from django.db import models
+
 from django.contrib.auth.models import User
+from django.db import models
+
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
@@ -9,6 +11,7 @@ class Product(models.Model):
 
     def __str__(self):  # __unicode__ on Python 2
         return self.name
+
 
 class Review(models.Model):
     product = models.ForeignKey(Product, related_name='reviews')
